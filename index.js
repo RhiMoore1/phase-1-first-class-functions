@@ -2,10 +2,10 @@
  
  // takes a callback as an argument
  // call the callback function
- function receivesAFunction(callback) {
-    callback();
+ function receivesAFunction(cb) {
+    return cb();
 }
-receivesAFunction();
+receivesAFunction(function () {return 'I am a callback function'});
 
 
 
